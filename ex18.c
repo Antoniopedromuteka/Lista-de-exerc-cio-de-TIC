@@ -4,13 +4,13 @@
 
 
 /*
-Um hotel com 30 quartos, cobra USD 50,00 por di·ria e mais uma taxa de serviÁos.
-A taxa de serviÁos e¥ de:
-ï USD 4,00 por di·ria, se o n˙mero de di·rias for < 15;
-ï USD 3,60 por di·ria, se o n˙mero de di·rias for = 15;
-ï USD 3,00 por di·ria, se o n˙mero de di·rias for > 15.
-FaÁa um Programa em C que imprima o nome e o total da conta de cada cliente
-do hotel. Imprima tambÈm o total ganho pelo hotel.
+Um hotel com 30 quartos, cobra USD 50,00 por di√°ria e mais uma taxa de servi√ßos.
+A taxa de servi√ßos e¬¥ de:
+‚Ä¢ USD 4,00 por di√°ria, se o n√∫mero de di√°rias for < 15;
+‚Ä¢ USD 3,60 por di√°ria, se o n√∫mero de di√°rias for = 15;
+‚Ä¢ USD 3,00 por di√°ria, se o n√∫mero de di√°rias for > 15.
+Fa√ßa um Programa em C que imprima o nome e o total da conta de cada cliente
+do hotel. Imprima tamb√©m o total ganho pelo hotel.
 
 */
 
@@ -27,17 +27,17 @@ main(){
 		 printf("digite quantos dias voce ficou hospedado: ");
 		 scanf("%d",&dias);
 		 if(dias<15){
-			 tot=(dias*50)+4;
+			 tot=(dias*50)+(dias*4.0);
 			 printf("Nome: %s\n total de conta: %.1f$\n",nome,tot);
 		 }else if(dias==15){
-			 tot=(dias*50)+3.6;
+			 tot=(dias*50)+(dias*3.6);
 			  printf("Nome: %s\n total de conta: %.1f$\n",nome,tot);
 		 }else{
-			 tot=(dias*50)+3;
+			 tot=(dias*50)+(dias*3.0);
 			  printf("Nome: %s\n total de conta: %.1f$\n",nome,tot);
 		 }
 	  }
 	}else{
-		printf("quantidade inv·lida\n");
+		printf("quantidade inv√°lida\n");
 	}
 }
