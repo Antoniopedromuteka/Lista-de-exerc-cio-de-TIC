@@ -16,7 +16,7 @@ do hotel. Imprima também o total ganho pelo hotel.
 
 main(){
 	int i=0,dias,q;
-	float tot;
+	float tot=0,tot_total=0;
  	char nome[30];
  	printf("digite a quantidade de clientes: ");
  	scanf("%d",&q);
@@ -36,8 +36,10 @@ main(){
 			 tot=(dias*50)+(dias*3.0);
 			  printf("Nome: %s\n total de conta: %.1f$\n",nome,tot);
 		 }
+			tot_total+=tot;
 	  }
 	}else{
 		printf("quantidade inválida\n");
 	}
+	printf("A quantidade total de ganho do hotel é de %.1f$\n",tot_total);
 }
